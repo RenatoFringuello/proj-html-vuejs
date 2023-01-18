@@ -1,0 +1,59 @@
+@use './partials/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,800&display=swap');
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+body{
+    //w100~900 & cursive w-400-600-800
+    font-family: 'Poppins', sans-serif;
+}
+
+//MIXINS
+@mixin flex($align: flex-start, $justify : flex-start) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
+//CLASSES
+//font birtstone bounce
+.birthstone-bounce-ft{
+    //w400-500
+    font-family: 'Birthstone Bounce', cursive;
+}
+
+//Button
+.btn{
+    cursor: pointer;
+    color:$main-btn-fg;
+    background-color: $main-btn-bg;
+    border-radius: 4px;
+    font-size: inherit;
+    font-weight: bold;
+    padding: .4rem  1.8rem;
+    
+    &.btn-big{
+        padding: 1rem  2.5rem;
+        
+        &.light-orange{
+            color:$main-btn-bg;
+            background-color: $main-btn2-bg;
+            
+            &:hover{
+                color:$main-btn-fg;
+                background-color: $main-btn-bg;
+            }
+        }
+    }
+    &:hover{
+        background-color: $main-btn-hover-bg;
+    }
+}
