@@ -25,5 +25,6 @@
     }
     .quote{
         font-weight: 600;
+        margin-bottom: 1.5rem;
     }
 </style>
