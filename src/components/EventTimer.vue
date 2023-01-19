@@ -7,7 +7,7 @@
 <template>
     <section>
         <span class="text">Starts TOMORROW! Our biggest event of the year...</span>
-        <span class="timer">00 : 00 : 00 : 00</span>
+        <span class="timer"><i class="fa-regular fa-clock"></i>00 : 00 : 00 : 00</span>
         <button class="btn">Get ticket</button>
     </section>
 </template>
@@ -24,9 +24,13 @@
         *{
             margin:.5rem 1rem;
             &.timer{
-                font-size: 1rem;
+                font-size: .9rem;
                 font-weight: 600;
                 color:$cube-bay-many;
+
+                i{
+                    margin:.4rem;
+                }
             }
         }
     }
