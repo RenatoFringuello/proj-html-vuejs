@@ -2,6 +2,7 @@
     import AppTitle from '../prefabs/AppTitle.vue';
     import BoxCardsSector from './sectors/BoxCardsSector.vue';
     import AboutMeSector from './sectors/AboutMeSector.vue';
+    import VideoSector from './sectors/VideoSector.vue';
 
     export default {
         name: "MainIntro",
@@ -9,6 +10,7 @@
             AppTitle,
             BoxCardsSector,
             AboutMeSector,
+            VideoSector,
         }
     }
 </script>
@@ -17,6 +19,7 @@
     <section id="intro">
         <BoxCardsSector />
         <AboutMeSector />
+        <VideoSector videoId="G1IbRujko-A" />
     </section>
 </template>
 
