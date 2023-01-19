@@ -24,11 +24,11 @@
 <template>
     <section id="intro">
         <div class="title-container">
-            <AppTitle text="Artist coaching" font-size="1.8rem" className="birthstone-bounce-ft"/>
+            <AppTitle text="Artist coaching" font-size="2rem" className="birthstone-bounce-ft"/>
             <AppTitle text="lorem lorem lorem lorem v lorem lorem lorem lorem" font-size="1.5rem" className="quote"/>
         </div>
         <div class="cards-container">
-            <ArtistBoxCard v-for="artistBox,i in artistBoxes" :index="i+1" :title="artistBox.title" :info="artistBox.info"/>
+            <ArtistBoxCard class="card" v-for="artistBox,i in artistBoxes" :index="i+1" :title="artistBox.title" :info="artistBox.info"/>
         </div>
     </section>
 </template>
@@ -37,13 +37,16 @@
     @use '../../style/general.scss' as *;
     section{
         background:rebeccapurple;
+        padding:3.5rem 0;
         .title-container{
             @include container(35%,auto);
             text-align: center;
+            margin-bottom: 2rem;
         }
         .cards-container{
-            @include container(70%, auto);
-            @include flex(center, center);
+            @include container(900px, auto);
+            @include flex(flex-start, space-between);
+
         }
     }
 </style>
