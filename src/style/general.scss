@@ -15,11 +15,25 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    color:inherit;
+}
+ul{
+    list-style-type: none;
+}
+
 //MIXINS
-@mixin flex($align: flex-start, $justify : flex-start) {
+@mixin flex($align: flex-start, $justify : flex-start, $direction:row) {
     display: flex;
     align-items: $align;
     justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin container($size,$alignment){
+    width: 100%;
+    max-width: $size;
+    margin: 0 $alignment;
 }
 
 
