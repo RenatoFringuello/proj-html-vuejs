@@ -37,7 +37,7 @@
         background-color: red;
         padding: 1.1rem 0;
         .container{
-            @include container(1200px, auto);
+            @include container(1070px, auto);
             @include flex(center, space-between);
             
             ul{
