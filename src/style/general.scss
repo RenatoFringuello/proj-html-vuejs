@@ -51,7 +51,7 @@ p{
     cursor: pointer;
     color:$main-btn-fg;
     background-color: $main-btn-bg;
-    border-radius: 4px;
+    border-radius: $btn-border-radius;
     font-weight: bold;
     font-size: .6rem;
     padding: .4rem  1.8rem;
