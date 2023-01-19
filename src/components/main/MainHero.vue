@@ -1,12 +1,12 @@
 <script>
-    import Title from '../prefabs/Title.vue';
+    import AppTitle from '../prefabs/AppTitle.vue';
     import DynamicBox from '../prefabs/DynamicBox.vue';
 
     export default {
     name: "MainHero",
     components: {
         DynamicBox,
-        Title
+        AppTitle
     },
     data() {
         return {
@@ -32,9 +32,8 @@
         <DynamicBox :x=13 :y=30 :direction=-1 :offsetX="this.offsetX" :offsetY="this.offsetY" />
         <DynamicBox :x=80 :y=23 :direction=1 :offsetX="this.offsetX" :offsetY="this.offsetY" />
         <div class="hero-info">
-            <Title text="Hello, Im Matin" fontSize="2.5rem" className="birthstone-bounce-ft"/>
-            
-            <Title text="lorem lorem lorem lorem lorem lorem v lorem" fontSize="1.8rem" className="quote" />
+            <AppTitle text="Hello, Im Matin" fontSize="2.5rem" className="birthstone-bounce-ft"/>
+            <AppTitle text="lorem lorem lorem lorem lorem lorem v lorem" fontSize="1.8rem" className="quote" />
 
             <button class="btn btn-big ">Get started today</button>
         </div>
