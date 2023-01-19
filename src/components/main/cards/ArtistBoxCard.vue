@@ -31,7 +31,6 @@
 <style lang="scss" scoped>
     .card{
         width: calc((100% / 4) - 1rem);
-        font-size: .7rem;
 
         img{
             object-fit: contain;
@@ -44,10 +43,6 @@
             margin-bottom:.3rem;
             font-size:1rem;
             font-weight: 400;
-        }
-        p{
-            font-weight: 200;
-            line-height: 1.2rem;
         }
         
         &:nth-child(even){
