@@ -22,7 +22,7 @@
 
 <template>
     <article class="card">
-        <img :src="store.getImgPath(`artist/artist_boxes/artist-box-image-${getIndex}.png`)" :alt="`artist-box-image-${getIndex}.png`">
+        <img :src="store.getImgPath(`artist/artist_boxes/artist-box-image-${getIndex}.png`)" :alt="`artist-box-image-${getIndex}`">
         <div>{{ title }}</div>
         <p>{{ info }}</p>
     </article>
