@@ -9,6 +9,14 @@
             offsetY:Number
         },
         computed: {
+            /**
+             *  It calculate the position of the element and return the style
+             *  for top and left positions.
+             * 
+             *  - x,y are the coordinates for the origin position of the box
+             *  - direction is passed to revert or not the step direction
+             *  - offsets are the distance to move from the origin position
+             */
             position(){
                 return {
                     left : `${(this.offsetX * this.direction) + this.x}%`,
