@@ -21,15 +21,16 @@
         color: $cube-boulder;
         background-color: $timer-bg;
         font-size: .7rem;
+        padding: .35rem 0;
         *{
-            margin:.5rem 1rem;
+            margin: 0 1rem;
             &.timer{
-                font-size: .9rem;
+                font-size: .85rem;
                 font-weight: 600;
                 color:$cube-bay-many;
 
                 i{
-                    margin:.4rem;
+                    margin:0 .4rem;
                 }
             }
         }
