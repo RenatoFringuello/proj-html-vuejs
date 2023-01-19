@@ -32,7 +32,7 @@
         <DynamicBox :x=13 :y=30 :direction=-1 :offsetX="this.offsetX" :offsetY="this.offsetY" />
         <DynamicBox :x=80 :y=23 :direction=1 :offsetX="this.offsetX" :offsetY="this.offsetY" />
         <div class="hero-info">
-            <AppTitle text="Hello, Im Matin" fontSize="2.5rem" className="birthstone-bounce-ft"/>
+            <AppTitle text="Hello, Im Martin" fontSize="2.5rem" className="birthstone-bounce-ft"/>
             <AppTitle text="lorem lorem lorem lorem lorem lorem v lorem" fontSize="1.8rem" className="quote" />
 
             <button class="btn btn-big ">Get started today</button>
@@ -52,10 +52,6 @@
             position: relative;
             width: 35%;
             text-align: center;
-            
-            button{
-                margin-top: 1rem;
-            }
         }
     }
 </style>
