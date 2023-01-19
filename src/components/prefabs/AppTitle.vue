@@ -1,6 +1,6 @@
 <script>
     export default {
-        name:'Title' , 
+        name:'AppTitle' , 
         props:{
             text:String,
             fontSize:String,
