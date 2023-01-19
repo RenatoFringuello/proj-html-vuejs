@@ -42,6 +42,8 @@ ul{
 .birthstone-bounce-ft{
     //w400-500
     font-family: 'Birthstone Bounce', cursive;
+    font-weight: 500;
+    color: $main-btn-hover-bg;
 }
 
 //Button
@@ -50,12 +52,12 @@ ul{
     color:$main-btn-fg;
     background-color: $main-btn-bg;
     border-radius: 4px;
-    font-size: inherit;
     font-weight: bold;
+    font-size: .6rem;
     padding: .4rem  1.8rem;
     
     &.btn-big{
-        padding: 1rem  2.5rem;
+        padding: .8rem  2rem;
         
         &.light-orange{
             color:$main-btn-bg;
