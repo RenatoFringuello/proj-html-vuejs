@@ -17,6 +17,7 @@ body{
 }
 
 a{
+    cursor: pointer;
     color:inherit;
 }
 ul{
@@ -47,6 +48,17 @@ p{
 
 
 //CLASSES
+//Link
+.link{
+    font-weight: 500;
+    color:$main-btn-bg;
+    text-decoration: none;
+    border-bottom: .1px solid $main-link-fg;
+    transition: .5s;
+    &:hover{
+        border-bottom: .3px solid ;
+    }
+}
 
 //Button
 .btn{
