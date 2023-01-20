@@ -31,7 +31,7 @@
 </script>
 
 <template>
-    <article class="card" :class="className">
+    <article class="card">
         <img :src="store.getImgPath(`artist/artist_events/artist-event-${getIndex}-250x300.jpg`)" :alt="`artist-event-${getIndex}`">
         <div class="info">
             <p class="location"> {{ getDate.toUpperCase() }}</p>
