@@ -6,6 +6,7 @@
     import TestimonialsSector from './sectors/TestimonialsSector.vue';
     import CoursesSector from './sectors/CoursesSector.vue';
     import LatestBlogSector from './sectors/LatestBlogSector.vue';
+    import UpcomingEventsSector from './sectors/UpcomingEventsSector.vue';
 
     export default {
         name: "MainIntro",
@@ -17,6 +18,7 @@
             TestimonialsSector,
             CoursesSector,
             LatestBlogSector,
+            UpcomingEventsSector,
         }
     }
 </script>
@@ -29,6 +31,7 @@
         <TestimonialsSector />
         <CoursesSector />
         <LatestBlogSector />
+        <UpcomingEventsSector />
     </section>
 </template>
 

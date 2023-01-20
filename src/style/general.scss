@@ -25,10 +25,12 @@ ul{
 }
 
 p{
-    font-weight: 200;
     line-height: 1.2rem;
     font-size: .7rem;
     color: $cube-boulder;
+    &.thin{
+        font-weight: 200;
+    }
 }
 
 //MIXINS

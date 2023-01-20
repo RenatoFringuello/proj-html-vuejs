@@ -72,7 +72,6 @@
             .wrapper{
                 @include flex();
                 p{
-                    font-weight: 400;
                     font-size: .6rem;
                     margin-right: 1rem;
                     i{

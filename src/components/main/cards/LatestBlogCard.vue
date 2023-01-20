@@ -37,11 +37,11 @@
     <article class="card" :class="className">
         <img :src="store.getImgPath(`artist/artist_blogs/artist-blog-${getIndex}-${imgSize}`)" :alt="`artist-blog-${getIndex}-${imgSize}`">
         <div class="info">
-            <p>{{ category }}</p>
+            <p class="category">{{ category }}</p>
             <div class="title">{{ title }}</div>
             <div class="wrapper">
-                <p><i class="fa-regular fa-file-lines"></i> {{ getDate }}</p>
-                <p><i class="fa-regular fa-user"></i> {{ nViews }} Views</p>
+                <p><i class="fa-regular fa-calendar"></i> {{ getDate }}</p>
+                <p><i class="fa-regular fa-eye"></i> {{ nViews }} Views</p>
             </div>
         </div>
     </article>
@@ -53,7 +53,6 @@
     .card{
         cursor: pointer;
         width: 373px;
-
         margin-bottom: 1.5rem;
         box-shadow: 0 15px 70px 5px #0003;
         
@@ -61,6 +60,7 @@
             position: relative;
             margin:0 3.2rem;
             .info{
+                padding:2rem;
                 width: 100%;
                 background-image:linear-gradient(#0000, #0005);
                 position: absolute;
@@ -93,23 +93,20 @@
             div{
                 margin-bottom:.5rem;
             }
-            
-            .price{
-                font-size:.8rem;
-                font-weight: 600;
-                color:$main-btn-bg;
+            .category{
+                letter-spacing: .1rem;
             }
             .title{
-                font-size:.9rem;
                 font-weight: 500;
-                max-width: 85%
+                font-size:.85rem;
             }
             .wrapper{
                 @include flex();
                 p{
-                    font-weight: 400;
                     font-size: .6rem;
-                    margin-right: 1rem;
+                    &:first-of-type{
+                        margin-right: 1.5rem;
+                    }
                     i{
                         margin-right: .2rem;
                     }
