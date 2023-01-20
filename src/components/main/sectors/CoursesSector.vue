@@ -56,7 +56,7 @@
     @use '../../../style/partials/variables' as *;
     #courses{
         @include container($header-max-w, auto);
-        padding:0 2.5rem 2rem;
+        padding:0 2.5rem 4rem;
         .title-container{
             @include container(50%,auto);
             text-align: center;
