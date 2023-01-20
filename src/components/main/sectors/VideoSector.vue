@@ -42,7 +42,6 @@
     @use '../../../style/general.scss' as *;
     @use '../../../style/partials/variables' as *;
     #video{
-        background:#1e9195;
         @include flex(center, center);
 
         iframe{

@@ -52,7 +52,6 @@
     @use '../../../style/general.scss' as *;
     @use '../../../style/partials/variables' as *;
     #latest-blog{
-        background-color: aquamarine;
         @include container($header-max-w, auto);
         padding:4rem 2.5rem 3.7rem;
         .title-container{

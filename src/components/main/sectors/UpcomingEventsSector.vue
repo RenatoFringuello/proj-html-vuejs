@@ -49,7 +49,6 @@
     @use '../../../style/general.scss' as *;
     @use '../../../style/partials/variables' as *;
     #upcoming-events{
-        background-color: rgb(163, 218, 24);
         @include container(875px, auto);
         padding:4rem 0rem 3.7rem;
         .title-container{

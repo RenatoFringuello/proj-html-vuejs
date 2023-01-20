@@ -35,7 +35,6 @@
 <style lang="scss" scoped>
     @use '../../../style/general.scss' as *;
     #box-cards{
-        background:rebeccapurple;
         .title-container{
             @include container(50%,auto);
             text-align: center;

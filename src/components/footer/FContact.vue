@@ -3,7 +3,8 @@
         name:'FContact',
         props:{
             heading:String,
-            links:Array
+            links:Array,
+            className:String
         }
     }
 </script>

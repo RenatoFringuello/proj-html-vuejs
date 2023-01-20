@@ -26,7 +26,6 @@
 <style lang="scss" scoped>
     @use '../../../style/general.scss' as *;
     #about-me{
-        background:magenta;
         @include flex(center, space-between);
         div{
             &.blockquote{
