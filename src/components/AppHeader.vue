@@ -1,21 +1,21 @@
 <script>
-import FContact from './footer/FContact.vue';
+import HContact from './HContact.vue';
 
     export default {
-    name: "AppHeader",
-    components: { FContact },
-    data() {
-        return {
-            nav:{
-                heading:'Address',
+        name: "AppHeader",
+        components: { HContact },
+        data() {
+            return {
                 links:[
-                    {href:'#',text:''},
-                    {href:'#',text:''},
-                    {href:'#',text:''},
-                ]
+                    {href:'#',text:'Home'},
+                    {href:'#',text:'Pages'},
+                    {href:'#',text:'Courses'},
+                    {href:'#',text:'Features'},
+                    {href:'#',text:'Blog'},
+                    {href:'#',text:'Shop'},
+                ],
             }
-        }
-    },
+        },
 
 }
 </script>
@@ -24,8 +24,16 @@ import FContact from './footer/FContact.vue';
     <header>
         <div class="container">
             <a href="#" class="logo"><img src="../assets/images/brands/dark-logo.png" alt="MaxCoach's logo"></a>
-            <FContact />
-            
+            <HContact :iconClassName="'fa-solid fa-chevron-down'"
+                        :links="links"/>
+            <nav>
+                <ul class="social-container">
+                    <li><img src="../assets/images/social/insta.png" alt=""></li>
+                    <li><img src="../assets/images/social/twitter.png" alt=""></li>
+                    <li><img src="../assets/images/social/linkedin.png" alt=""></li>
+                    <li class="face"><img src="../assets/images/social/facebook2.png" alt=""></li>
+                </ul>
+            </nav>
         </div>
     </header>
 </template>
@@ -51,6 +59,18 @@ import FContact from './footer/FContact.vue';
                 }
                 &.social-container li{
                     margin:0 .5rem;
+                    &.face{
+                        background-color: $cube-boulder;
+                    }
+                    @include flex();
+                    img{
+                        margin:auto;
+                        display: block;
+                        max-width: 20px;
+                        height: 20px;
+                        filter: grayscale(1);
+                        filter: grayscale(1);
+                    }
                 }
             }
         }

@@ -1,8 +1,7 @@
 <script>
     export default {
-        name:'FContact',
+        name:'HContact',
         props:{
-            heading:String,
             links:Array,
             iconClassName:String
         }
@@ -11,7 +10,6 @@
 
 <template>
     <nav>
-        <div class="title">{{ heading }}</div>
         <ul>
             <li v-for="link in links">
                 <a :href="link.href">{{ link.text }}</a>
@@ -22,8 +20,8 @@
 </template>
 
 <style lang="scss" scoped>
- @use '../../style/general.scss' as *;
-  @use '../../style/partials/variables' as *;
+ @use '../style/general.scss' as *;
+  @use '../style/partials/variables' as *;
     nav{
 
         .title{
@@ -31,12 +29,17 @@
             font-weight: 600;
             margin-bottom: .7rem;
         }
-        li{
-            margin-bottom: .5rem;
-            
-            a{
-                font-size: .65rem;
-                color:$cube-boulder;
+        ul{
+            @include flex();
+            li{
+                margin:0 1rem;                
+                a{
+                    font-size: .7rem;
+                }
+                i{
+                    font-size: .5rem;
+                    margin-left: .3rem;
+                }
             }
         }
     }
