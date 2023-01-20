@@ -2,7 +2,7 @@
     import AppLoader from '../../prefabs/AppLoader.vue'
 
     export default {
-        name:'BoxCardsSector',
+        name:'VideoSector',
         components: {
             AppLoader,
         },
