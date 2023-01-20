@@ -4,6 +4,7 @@
 import AppFooter from './components/footer/AppFooter.vue';
   import MainHero from './components/main/MainHero.vue';
   import MainIntro from './components/main/MainIntro.vue';
+import AsideNav from './components/prefabs/AsideNav.vue';
 
   export default{
     components:{
@@ -11,13 +12,15 @@ import AppFooter from './components/footer/AppFooter.vue';
     AppHeader,
     MainHero,
     MainIntro,
-    AppFooter
+    AppFooter,
+    AsideNav
 }
   }
 
 </script>
 
 <template>
+  <AsideNav />
   <EventTimer />
   <AppHeader />
   <main>
