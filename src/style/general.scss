@@ -13,6 +13,7 @@
 body{
     //w100~900 & cursive w-400-600-800
     font-family: 'Poppins', sans-serif;
+    color:$cube-cod-gray;
 }
 
 a{
@@ -26,6 +27,7 @@ p{
     font-weight: 200;
     line-height: 1.2rem;
     font-size: .7rem;
+    color: $cube-boulder;
 }
 
 //MIXINS
