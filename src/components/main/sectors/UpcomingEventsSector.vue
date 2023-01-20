@@ -22,7 +22,7 @@
         },
         computed:{
             getIndex(){
-                return (direction, index) => (direction > 0)? index+1 :(this.courses.length) - index;
+                return (direction, index) => (direction > 0)? index+1 :this.events.length - index;
             }
         }
     }
@@ -37,7 +37,7 @@
         <div class="cards-container">
             <UpcomingEventCard  v-for="event,i in events"
                                 :class="i>1?'reverse':''"
-                                :index="i+1"
+                                :index="getIndex(-1,i)"
                                 :date="event.date"
                                 :title="event.title"
                                 :location="event.location"/>
