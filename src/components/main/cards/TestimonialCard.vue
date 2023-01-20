@@ -44,6 +44,7 @@
         padding:2rem 2.3rem 3rem;
         background-color: white;
         border-radius: $btn-border-radius;
+        cursor: pointer;
 
         &.disabled{
             opacity: .35;
