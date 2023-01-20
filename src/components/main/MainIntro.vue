@@ -3,6 +3,7 @@
     import BoxCardsSector from './sectors/BoxCardsSector.vue';
     import AboutMeSector from './sectors/AboutMeSector.vue';
     import VideoSector from './sectors/VideoSector.vue';
+    import TestimonialsSector from './sectors/TestimonialsSector.vue';
 
     export default {
         name: "MainIntro",
@@ -11,6 +12,7 @@
             BoxCardsSector,
             AboutMeSector,
             VideoSector,
+            TestimonialsSector,
         }
     }
 </script>
@@ -20,6 +22,7 @@
         <BoxCardsSector />
         <AboutMeSector />
         <VideoSector videoId="G1IbRujko-A" />
+        <TestimonialsSector />
     </section>
 </template>
 
@@ -29,7 +32,6 @@
         div.sector{
             padding:3.5rem 0;
             @include container(900px, auto);
-            
         }
     }
 </style>
