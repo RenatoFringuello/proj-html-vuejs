@@ -4,6 +4,7 @@
     import AboutMeSector from './sectors/AboutMeSector.vue';
     import VideoSector from './sectors/VideoSector.vue';
     import TestimonialsSector from './sectors/TestimonialsSector.vue';
+    import CoursesSector from './sectors/CoursesSector.vue';
 
     export default {
         name: "MainIntro",
@@ -13,6 +14,7 @@
             AboutMeSector,
             VideoSector,
             TestimonialsSector,
+            CoursesSector,
         }
     }
 </script>
@@ -23,6 +25,7 @@
         <AboutMeSector />
         <VideoSector videoId="G1IbRujko-A" />
         <TestimonialsSector />
+        <CoursesSector />
     </section>
 </template>
 
