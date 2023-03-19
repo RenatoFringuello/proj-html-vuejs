@@ -1,0 +1,14 @@
+//MIXINS
+@mixin flex($align: flex-start, $justify : flex-start, $wrap : nowrap, $direction:row) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin container($size,$alignment){
+    width: 100%;
+    max-width: $size;
+    margin: 0 $alignment;
+}
