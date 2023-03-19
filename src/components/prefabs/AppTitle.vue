@@ -14,15 +14,8 @@
 </template>
 
 <style lang="scss" scoped>
-    @use '../../style/partials/variables' as *;
 
-    //font birtstone bounce
-    .birthstone-bounce-ft{
-        //w400-500
-        font-family: 'Birthstone Bounce', cursive;
-        color: $main-btn-hover-bg;
-        font-weight: 500;
-    }
+    // @use '../../style/partials/variables' as *;
     .quote{
         font-weight: 600;
         margin-bottom: 1.5rem;
