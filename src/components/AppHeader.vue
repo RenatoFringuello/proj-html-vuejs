@@ -1,9 +1,13 @@
 <script>
-import HContact from './HContact.vue';
+import HContact from './header/HContact.vue';
+import EventTimer from './header/EventTimer.vue';
 
     export default {
         name: "AppHeader",
-        components: { HContact },
+        components: { 
+            HContact,
+            EventTimer,
+        },
         data() {
             return {
                 links:[
@@ -22,6 +26,7 @@ import HContact from './HContact.vue';
 
 <template>
     <header>
+        <EventTimer />
         <div class="container">
             <a href="#" class="logo"><img src="../assets/images/brands/dark-logo.png" alt="MaxCoach's logo"></a>
             <HContact :iconClassName="'fa-solid fa-chevron-down'"
@@ -40,12 +45,12 @@ import HContact from './HContact.vue';
 
 <style lang="scss" scoped>
     @use '../style/general.scss' as *;
-    @use '../style/partials/variables' as *;
+    // @use '../style/partials/variables' as *;
     header{
-        padding: 1.1rem 0;
         .container{
             @include container($header-max-w, auto);
             @include flex(center, space-between);
+            padding: 1.1rem 0;
             
             .logo img{
                 display: block;

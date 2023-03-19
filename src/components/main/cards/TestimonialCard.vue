@@ -38,7 +38,7 @@
 
 <style lang="scss" scoped>
     @use '../../../style/general.scss' as *;
-    @use '../../../style/partials/variables' as *;
+    // @use '../../../style/partials/variables' as *;
     .card{
         width: calc((100% / 3) - 1.8rem);
         padding:2rem 2.3rem 3rem;

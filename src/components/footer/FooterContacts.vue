@@ -34,7 +34,7 @@ import FContact from './FContact.vue';
 
 <style lang="scss" scoped>
   @use '../../style/general.scss' as *;
-  @use '../../style/partials/variables' as *;
+//   @use '../../style/partials/variables' as *;
     .navs-container{
         padding: 4rem 0;
         @include container($header-max-w, auto);

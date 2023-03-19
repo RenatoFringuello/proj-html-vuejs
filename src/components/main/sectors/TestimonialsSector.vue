@@ -65,7 +65,7 @@
 
 <style lang="scss" scoped>
     @use '../../../style/general.scss' as *;
-    @use '../../../style/partials/variables' as *;
+    // @use '../../../style/partials/variables' as *;
     #testimonials{
         padding:0 2.5rem 2rem;
         .title-container{

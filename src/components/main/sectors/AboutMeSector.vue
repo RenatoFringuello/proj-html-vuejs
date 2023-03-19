@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <div class="sector" id="about-me">
+    <section class="sector" id="about-me">
         <div class="blockquote">
             <img src="../../../assets/images/artist-quote-icon.png">
             <AppTitle text="I coach and mentor visual artist, like you, to Create Like You Mean it" font-size="2.2rem" className="quote"/>
@@ -20,7 +20,7 @@
             <p>As an artist and an educator for nearly 30 years, I understand what it takes to create.</p>
             <button class="btn btn-big light-orange">Get started today</button>
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

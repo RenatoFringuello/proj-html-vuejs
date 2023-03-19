@@ -41,7 +41,7 @@
 
 <style lang="scss" scoped>
     @use '../../../style/general.scss' as *;
-    @use '../../../style/partials/variables' as *;
+    // @use '../../../style/partials/variables' as *;
     .card{
         cursor: pointer;
         width: calc((100% / 4) - 1rem);

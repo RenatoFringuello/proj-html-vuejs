@@ -50,7 +50,7 @@
 
 <style lang="scss" scoped>
     @use '../../../style/general.scss' as *;
-    @use '../../../style/partials/variables' as *;
+    // @use '../../../style/partials/variables' as *;
     #latest-blog{
         @include container($header-max-w, auto);
         padding:4rem 2.5rem 3.7rem;
